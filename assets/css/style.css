@@ -1,0 +1,65 @@
+:root {
+    --swiper-pagination-color: #713523;
+}
+
+body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #353f49;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #71352350;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+}
+
+@media(min-width: 1280px) {
+    .container {
+        padding: 0.5rem 10rem;
+    }
+}
+
+.nav-active {
+    background-color: #f8f8f8 !important;
+}
+
+header.home {
+    height: calc(100Vh - 100px);
+}
+
+
+/* ********** Start Animation ********** */
+.animate-top-bottom {
+    animation: top-and-bottom 4s linear infinite;
+}
+
+@keyframes top-and-bottom {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+}
+
+/* ********** End Animation ********** */

@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/avif+svg+xml" href="./assets/data/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة جدارية ديكورية</title>
+    <!-- Start google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+    <!-- End google font -->
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#713523',
+              secondary: '#d08a60',
+              light: '#edddc1',
+              dark: '#343131',
+              main_bg: '#edddc1',
+            }
+          }
+        }
+      }
+    </script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" >
+    <link rel="stylesheet" href="./assets/css/style.css" >
+  </head>
+  <body>
+
+
+    <nav class="h-[100px] fixed top-0 w-full z-50 border-b flex items-center bg-[#ffffff]">
+      <div class="container flex justify-between items-center">
+        <div class="flex gap-8 justify-between items-center flex-1">
+          <!-- Logo -->
+          <div class="logo flex gap-2 relative h-[70px] rounded-md">
+            <a href="#">
+              <img src="./assets/data/logo.png" alt="logo" class="w-full h-full object-contain" loading="lazy">
+            </a>
+          </div>
+          <div class="row flex justify-between items-center">
+            <!-- UL Navbar -->
+            <div class="ul flex gap-8 items-center py-4">
+              <!-- Nav in full screen -->
+              <div class="flex gap-16">
+                <ul class="hidden 2xl:flex gap-8 font-medium text-white items-center">
+                  <li>
+                    <a href="./index.html"
+                      class="text-primary relative font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8] nav-active"
+                      aria-label="Read more about Seminole tax hike" nav-active>
+                      <i class="fa-solid fa-house"></i>
+                      الـــرئيـسـيـــة
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./index.html#about-our-products"
+                      class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                      aria-label="Read more about Seminole tax hike" nav-active>
+                      <i class="fas fa-address-card"></i>
+                      عـــن مـنـتـجـــاتـنـــا
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./index.html#our-products"
+                      class="text-primary font-semibold text-[20px] duration-300 p-2 rounded-md hover:bg-[#f8f8f8]"
+                      aria-label="Read more about Seminole tax hike" nav-active>
+                      <i class="fab fa-shopify"></i>
+                      مـنـتـجـــاتـنـــا
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Nav in Mobile -->
+              <ul class="sidebar w-full flex flex-col py-3 absolute left-0 top-[100px] -translate-x-[100%] bg-[#f8f8f8] text-gray-700 duration-500">
+                <li>
+                  <a href="./index.html"
+                    class="w-full text-primary px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px] border-b"
+                    aria-label="Read more about Seminole tax hike">
+                    <i class="fa-solid fa-house ml-3"></i>
+                    الـــرئيـسـيـــة
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html#about-our-products"
+                    class="w-full text-primary px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px] border-b"
+                    aria-label="Read more about Seminole tax hike">
+                    <i class="fas fa-address-card ml-3"></i>
+                    عـــن مـنـتـجـــاتـنـــا
+                  </a>
+                </li>
+                <li>
+                  <a href="./index.html#our-products"
+                    class="w-full text-primary px-4 py-3 hover:pr-6 duration-300 block font-bold text-[20px] border-b"
+                    aria-label="Read more about Seminole tax hike">
+                    <i class="fas fa-baby-carriage ml-3"></i>
+                    مـنـتـجـــاتـنـــا
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Toggler -->
+        <div class="cursor-pointer 2xl:hidden w-[30px] text-gray-700">
+          <span class="toggler fas fa-bars block h-full w-full"></span>
+        </div>
+      </div>
+    </nav>
+
+
+    <main class="mt-[100px]">
+
+
+      <header class="min-h-screen flex mt-24 pt-10">
+        <div class="container relative md:flex gap-10 justify-between">
+
+          <!-- Swiper -->
+          <div class="swiper h-[370px] md:h-[500px] flex-1 mb-5">
+            <div class="mySwiper w-full h-full">
+              <div class="swiper-wrapper">
+          
+                <div class="swiper-slide mb-10">
+                  <figure class="img sm:w-96 md:w-[450px] 2xl:w-[500px]">
+                    <img src="./assets/data/pro2/(Arabic) (3).png" alt="pro" width="640" height="360"
+                      class="w-full h-full rounded-lg">
+                  </figure>
+                </div>
+          
+                <div class="swiper-slide mb-10">
+                  <figure class="img sm:w-96 md:w-[450px] 2xl:w-[500px]">
+                    <img src="./assets/data/pro2/(Arabic) (2).png" alt="pro" width="640" height="360"
+                      class="w-full h-full rounded-lg">
+                  </figure>
+                </div>
+          
+                <div class="swiper-slide mb-10">
+                  <figure class="img sm:w-96 md:w-[450px] 2xl:w-[500px]">
+                    <img src="./assets/data/pro2/(Arabic) (4).png" alt="pro" width="640" height="360"
+                      class="w-full h-full rounded-lg">
+                  </figure>
+                </div>
+          
+                <div class="swiper-slide mb-10">
+                  <figure class="img sm:w-96 md:w-[450px] 2xl:w-[500px]">
+                    <img src="./assets/data/pro2/(Arabic) (5).png" alt="pro" width="640" height="360"
+                      class="w-full h-full rounded-lg">
+                  </figure>
+                </div>
+          
+                <div class="swiper-slide mb-10">
+                  <figure class="img sm:w-96 md:w-[450px] 2xl:w-[500px]">
+                    <img src="./assets/data/pro2/(Arabic) (6).png" alt="pro" width="640" height="360"
+                      class="w-full h-full rounded-lg">
+                  </figure>
+                </div>
+                              
+              </div>
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+
+          <!-- Info -->
+          <div class="info flex-1">
+            <div class="max-w-xl flex-1">
+              <h2 class="text-xl md:text-3xl font-semibold mb-2 text-gray-900">
+                لوحة جدارية ديكورية
+              </h2>
+              <div class="starts my-5 text-xl text-[#fbbf24]">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="price text-2xl font-semibold text-red-400">
+                <!-- ٢٩٩ ر.س -->
+                <!-- <span class="text-gray-300 text-xl font-normal"><strike>٣٩٩ ر.س</strike></span> -->
+              </div>
+              <p class="leading-[2]">
+                استمتع بإضافة لمسة فنية إلى منزلك مع هذه اللوحة الديكوريه المصممة على شكل ثعلب يستعرض جمال شكله و ذيله.
+                <br>
+                صديق للبيئة: مصنوعة من (ام.دى.اف) و المعالج بمادة (اليوريا فارمالدهايد و البارافين و مواد أخرى ليزيد مقاومته للاشتعال و
+                الرطوبة و النمل الأبيض) ومكونة من 5 طبقات بسمك 3 مم لكل طبقة ، هذه اللوحة تجمع بين الجمال والاستدامة.
+                <br>
+                تتميز اللوحة بتصميمها الدقيق والزخارف المتنوعة التي تشمل أنماطًا هندسية وأشكالًا نباتية، مما يضفي عليها طابعًا فنيًا
+                رائعًا. الألوان الطبيعية للخشب، من البيج الفاتح إلى البني الداكن، تضفي عليها جاذبية خاصة وتجعله قطعة ديكور مميزة في أي
+                مكان.
+                <br>
+                بالإضافة إلى جمالها، فإن هذه اللوحة سهلة التنظيف والصيانة، فقط بقطعة قماش مبللة بالماء تستطيع تنظيف مما ممكن ان يعلق به
+                <br>
+                مما يجعلها خيارًا مثاليًا لمن يبحث عن ديكور أنيق وسهل العناية. سواء كنت تبحث عن هدية فريدة أو ترغب في تزيين منزلك بقطعة
+                فنية مميزة، فإن هذه اللوحة الديكورية هي الخيار المثالي لك.
+                <br>
+                <span class="block py-2 font-bold underline">
+                  صناعة تركيه مميزة
+                </span>
+              </p>
+              <!-- <a href="#order" rel="noopener noreferrer">
+                <button class="btn-buy w-44 my-7 py-2 rounded-lg font-semibold bg-primary text-white hover:text-primary hover:bg-transparent transition-all border border-primary" name="Buying">اطلبه الآن</button>
+              </a> -->
+            </div>
+          </div>
+
+        </div>
+      </header>
+
+
+      <section id="order" class="py-14 relative overflow-hidden">
+        <div class="container">
+
+          <div class="main-title text-center mb-10 w-fit mx-auto text-primary">
+            <h3 class="text-3xl font-extrabold" style="text-shadow: -2px 6px 6px #71352330;">
+              اطـلـــب الآن
+            </h3>
+          </div>
+
+
+          <div class="form bg-white p-5 md:p-5 rounded-xl shadow flex-1 text-center lg:text-left duration-500 md:max-w-[600px] mx-auto border">
+            <input type="text" id="name" name="name" placeholder="الاســـم" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300" />
+            <input type="text" id="address" name="address" placeholder="الـعـنـــوان" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl bg-gray-50 border rounded-md focus:shadow duration-300" />
+            <input type="tel" id="phone" name="phone" placeholder="رقــم الــجـــوال" class="w-full p-2 mb-3 outline-none text-[#3A3939] text-xl text-right bg-gray-50 border rounded-md focus:shadow duration-300" />
+
+
+            <div class="select-option flex justify-between">
+
+              <div class="text-right w-[50%]">
+                <h6 class="text-primary">حدد المقاس</h6>
+                <fieldset class="flex flex-wrap gap-3 py-2">
+                
+                  <div>
+                    <label for="sizeOne"
+                      class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="sizeOption" value="30X20" id="sizeOne" class="sr-only" onclick="getTotal()" checked />
+                
+                      <p class="text-sm font-medium">30X20</p>
+                    </label>
+                  </div>
+  
+                  <div>
+                    <label for="sizeTwo"
+                      class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="sizeOption" value="45X30" id="sizeTwo" class="sr-only" onclick="getTotal()"/>
+                
+                      <p class="text-sm font-medium">45X30</p>
+                    </label>
+                  </div>
+                
+                  <div>
+                    <label for="sizeThree"
+                      class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="sizeOption" value="67X45" id="sizeThree" class="sr-only" onclick="getTotal()"/>
+                
+                      <p class="text-sm font-medium">67X45</p>
+                    </label>
+                  </div>
+                
+                </fieldset>
+              </div>
+  
+              <div class="text-right w-[50%]">
+                <h6 class="text-primary">حدد العدد</h6>
+                <fieldset class="flex flex-wrap gap-3 py-2">
+                
+                  <div>
+                    <label for="selectOne" class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="selectNumber" value="1" id="selectOne" class="sr-only" onclick="getTotal()" checked />
+                
+                      <p class="text-sm font-medium">1</p>
+                    </label>
+                  </div>
+  
+                  <div>
+                    <label for="selectTwo" class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="selectNumber" value="2" id="selectTwo" class="sr-only" onclick="getTotal()"/>
+                
+                      <p class="text-sm font-medium">2</p>
+                    </label>
+                  </div>
+  
+                  <div>
+                    <label for="selectThree" class="flex cursor-pointer items-center justify-center rounded-md border border-gray-100 bg-white px-3 py-2 text-gray-900 hover:border-gray-200 has-[:checked]:border-primary has-[:checked]:text-primary">
+                      <input type="radio" name="selectNumber" value="3" id="selectThree" class="sr-only" onclick="getTotal()"/>
+                
+                      <p class="text-sm font-medium">3</p>
+                    </label>
+                  </div>
+  
+                
+                </fieldset>
+              </div>
+
+            </div>
+
+            <div class="total flex items-center gap-1 py-3 text-lg font-semibold text-primary" id="total">
+              <h6>الـمـجـمـــوع:</h6>
+              <div>
+                <span id="price">349</span>
+                <span id="cur">ر.س</span>
+              </div>
+            </div>
+                    
+            <button type="submit" onclick="sendMessToWhatsapp()" class="w-full bg-primary text-white mt-3 rounded text-xl duration-300 hover:bg-transparent hover:text-primary hover:border-primary border px-3 py-2 mx-auto"
+              data-text="btn_send">أرسل طلبك</button>
+          </div>
+
+
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer id="footer" class="bg-main_bg">
+      <!--
+        <div class="contact py-3 border-b border-secondary">
+          <div class="container flex gap-2 items-center justify-center">
+      
+            <div class="x">
+              <a href="" target="_blank"
+                class="insta text-white text-2xl cursor-pointer bg-[#101010] hover:bg-[#000] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                <i class="fab fa-xing"></i>
+              </a>
+            </div>
+      
+            <div class="tiktok">
+              <a href="" target="_blank"
+                class="insta text-white text-2xl cursor-pointer bg-[#111] hover:bg-[#000] duration-300 h-10 w-10 flex items-center justify-center rounded-full">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+      
+          </div>
+        </div>
+      -->
+      <div class="foot px-5 py-5 text-primary">
+        <p class="w-fit mx-auto font-semibold">جميع الحقوق محفوظة لشركة شيك شوك 2024 &copy;</p>
+      </div>
+    </footer>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <!-- Initialize Swiper -->
+
+    <script src="./assets/js/all.min.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+    <script src="./assets/js/prTwo.js"></script>
+  </body>
+</html>
