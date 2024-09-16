@@ -35,6 +35,21 @@
   </head>
   <body>
 
+        <!--- #Modal --->
+        
+        <div class="models hidden h-screen w-full justify-center items-center fixed top-0 left-0 z-[9999] bg-[#00000050]"
+          style="backdrop-filter: blur(5px);" id="model">
+          <div class="video h-[75%] w-[90%] relative flex items-center justify-center">
+            <button
+              class="close-video h-[30px] w-[30px] p-[3px] rounded-full text-[18px] absolute top-[10px] right-0 text-white cursor-pointer bg-red-500 z-10"
+              data-close>X</button>
+            <video class="max-w-full max-h-full rounded-lg" controls>
+              <source src="./assets/data/pro2/AKILLI (Arabic) (90 x 160 px) (1).mp4" type="video/mp4" data-setVideo>
+            </video>
+          </div>
+        </div>
+
+
 
     <nav class="h-[100px] fixed top-0 w-full z-50 border-b flex items-center bg-[#ffffff]">
       <div class="container flex justify-between items-center">
@@ -43,6 +58,9 @@
           <div class="logo flex gap-2 relative h-[70px] rounded-md">
             <a href="#">
               <img src="./assets/data/logo-ar.png" alt="logo" class="w-full h-full object-contain" loading="lazy">
+            </a>
+            <a href="#">
+              <img src="./assets/data/logo.png" alt="logo" class="w-full h-full object-contain" loading="lazy">
             </a>
           </div>
           <div class="row flex justify-between items-center">
@@ -202,9 +220,9 @@
                   صناعة تركيه مميزة
                 </span>
               </p>
-              <!-- <a href="#order" rel="noopener noreferrer">
-                <button class="btn-buy w-44 my-7 py-2 rounded-lg font-semibold bg-primary text-white hover:text-primary hover:bg-transparent transition-all border border-primary" name="Buying">اطلبه الآن</button>
-              </a> -->
+              <button
+                class="btn-buy w-44 my-7 py-2 rounded-lg font-semibold bg-primary text-white hover:text-primary hover:bg-transparent transition-all border border-primary"
+                data-getVideo>عرض فيديو المنتج</button>
             </div>
           </div>
 

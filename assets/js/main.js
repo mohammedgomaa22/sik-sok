@@ -27,3 +27,21 @@ const navActive = () => {
 };
 navActive();
 // ***************************************************
+
+const openVideo = () => {
+    const model = document.getElementById("model");
+    const getVideo = document.querySelectorAll("[data-getVideo]");
+    // const setVideo = document.querySelector("[data-setVideo]");
+    document.querySelector("[data-close]").addEventListener("click", () => {
+        model.style.display = "none";
+    });
+
+    getVideo.forEach((vid) => {
+        vid.addEventListener("click", () => {
+            // setVideo.src = "";
+            model.style.display = "flex";
+        })
+    })
+    
+};
+openVideo();
