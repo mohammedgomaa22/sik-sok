@@ -43,8 +43,6 @@ function sendMessToWhatsapp() {
             + "الـعـــدد: " + count + "%0a"
             + "الـتـكـلـفـــة: " + price.innerHTML + "%0a"
             window.open(url, '_blank').focus();
-        // alert("شكراً لك سيتم الرد عليك في اقرب وقت");
-        snaptr('track', 'PURCHASE', {'price': INSERT_PRICE, 'currency': 'INSERT_CURRENCY', 'transaction_id': 'INSERT_TRANSACTION_ID', 'item_ids': ['INSERT_ITEM_ID_1', 'INSERT_ITEM_ID_2'], 'item_category': 'INSERT_ITEM_CATEGORY', 'number_items': INSERT_NUMBER_ITEMS, 'uuid_c1': 'INSERT_UUID_C1', 'user_email': 'INSERT_USER_EMAIL', 'user_phone_number': 'INSERT_USER_PHONE_NUMBER', 'user_hashed_email': 'INSERT_USER_HASHED_EMAIL', 'user_hashed_phone_number': 'INSERT_USER_HASHED_PHONE_NUMBER'})
     } else {
         alert("يجب ادخال الاسم والعنوان ورقم الهاتف");
     };
