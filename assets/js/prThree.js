@@ -17,7 +17,7 @@ function getTotal() {
 
     // ------------
     if (size == "17X50") {
-        count == 1 ? price.innerHTML = 499 : count == 2 ? price.innerHTML = 798 : count == 3 ? price.innerHTML = 1050 : null;
+        count == 1 ? price.innerHTML = 300 : count == 2 ? price.innerHTML = 575 : count == 3 ? price.innerHTML = 850 : null;
     }
     
 };
@@ -31,6 +31,9 @@ function sendMessToWhatsapp() {
     };
 
     if (params.name != "" && params.address != "" && params.phone != "") {
+        setTimeout(() => {
+            window.location.href = "../../thank.html";
+        }, 500);
         var url = "https://wa.me/" + "+905314812248" + "?text="
             + "أريد طلب منتج جديد " + "%0a"
             + "الاســـم: " + params.name + "%0a"
