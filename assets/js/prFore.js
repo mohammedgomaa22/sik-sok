@@ -16,7 +16,7 @@ function getTotal() {
     });
 
     // ------------
-    count == 1 ? price.innerHTML = 329 : count == 2 ? price.innerHTML = 299 : count == 3 ? price.innerHTML = 255 : null;
+    count == 1 ? price.innerHTML = 329 : count == 2 ? price.innerHTML = 598 : count == 3 ? price.innerHTML = 765 : null;
     
 };
 
