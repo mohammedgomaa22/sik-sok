@@ -38,7 +38,6 @@ function sendMessToWhatsapp() {
             + "الـعـنـــوان: " + params.address + "%0a"
             + "رقـــم الـهـــاتـــف: " + params.phone + "%0a"
             + "اســـم الـمـنـتـــج: " + "وحدة إضاءة ديكورية" + "%0a"
-            + "الـمـقـــاس: " + size + "%0a"
             + "الـعـــدد: " + count + "%0a"
             + "الـتـكـلـفـــة: " + price.innerHTML + "%0a"
             window.open(url, '_blank').focus();
