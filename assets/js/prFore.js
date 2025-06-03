@@ -37,7 +37,7 @@ function sendMessToWhatsapp() {
             + "الاســـم: " + params.name + "%0a"
             + "الـعـنـــوان: " + params.address + "%0a"
             + "رقـــم الـهـــاتـــف: " + params.phone + "%0a"
-            + "اســـم الـمـنـتـــج: " + "وحدة إضاءة ديكورية" + "%0a"
+            + "اســـم الـمـنـتـــج: " + "خريطه للمملكة العربية السعودية" + "%0a"
             + "الـعـــدد: " + count + "%0a"
             + "الـتـكـلـفـــة: " + price.innerHTML + "%0a"
             window.open(url, '_blank').focus();
